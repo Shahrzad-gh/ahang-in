@@ -5,7 +5,7 @@ export default function MusicContainer(props) {
     console.log("all", musicArray)
 
     return (
-        <div>
+        <div style={{ marginTop:10, display:"grid", gridTemplateColumns:"auto auto" }}>
             {musicArray && musicArray.data.map((index)=> 
                 <div><MusicCard key={index.id} music={index} /></div>
                 )
